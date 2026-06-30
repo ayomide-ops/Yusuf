@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+    body{
+            background: #000;
+            color: darkgoldenrod;
+    
+        }
+    .card {
+      background: rgb(31, 28, 28);
+      border-radius: 12px;
+      padding: 1.0rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      margin-bottom: 1.0rem;
+    } 
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (min-width: 750px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      .social-links {
+  margin-bottom: 1rem;
+}
+.social-links a {
+  color: var(--muted);
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.social-links a:hover {
+  color: var(--accent); /* Changes color when you hover over them */
+}
+    }
+    </style>
+</head>
+<body>
+      <!-- Contact Section with "Database" integration -->
+    <section id="contact" class="card">
+      <h2>Send a Message</h2>
+      <p style="font-size: 0.9rem; color: var(--muted);">Messages are sent directly to me via Formspree.</p>
+      
+      <!-- Replace 'your_email@example.com' with your actual email to activate -->
+      <form action="https://formspree.io/f/xzdynlvl" method="POST">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required placeholder="John Doe" style="width:95%; padding:10px; margin:8px 0 16px; border:1px solid #ddd; border-radius:4px;" />
+       <br>
+        <label for="email">E-mail Address</label>
+        <input id="email" name="email" type="text" required placeholder="Enter your E-mail here" style="width:95%; padding:10px; margin:8px 0 16px; border:1px solid #ddd; border-radius:4px;" />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="How can we collaborate?" style="width:95%; padding:10px; margin:8px 0 16px; border:1px solid #ddd; border-radius:4px;"></textarea>
+        
+        <button type="submit" style="width:95%; padding:12px; background:darkgoldenrod; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:bold;">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+        <p>Follow on:
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/ayomideops?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <!-- GitHub -->
+      <a href="ayomide-ops" target="_blank" title="GitHub"><i class="fab fa-github"></i>GitHub</a>
+      <!-- X (formerly Twitter) -->
+      <a href="https://x.com/ayomideops" target="_blank" title="X"><i class="fab fa-x-twitter"></i>X</a>
+      <!-- Instagram (Optional, for your photography interest) -->
+      <a href="https://www.instagram.com/ayomideops?utm_source=qr&igsh=MWtvNGl0eGF0c2hyaQ==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i>IG</a>
+    </div>
+    <p>&copy; 2026 Developer Portfolio | Built for Health & Security</p>
+</footer>
+</body>
+</html>
